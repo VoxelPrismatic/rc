@@ -1,0 +1,45 @@
+set linenumbers
+
+set autoindent
+
+#set tabs to 4 spaces
+set tabsize 4
+set tabstospaces
+
+#set brackets
+set brackets "'\"}])"
+set matchbrackets "'\"{[('\"}])"
+
+#add scrollbar
+set indicator
+
+#bindings // M- == alt
+
+bind M-[ unindent main
+bind M-] indent main
+
+unbind ^C main
+unbind M-{ main
+unbind M-} main
+unbind ^K main
+unbind ^U main
+unbind ^W main
+unbind M-3 main
+unbind ^O main
+unbind ^R main
+unbind ^T main
+unbind F3 main
+unbind Ins main
+unbind F5 main
+
+bind ^Z undo main
+bind ^Y redo main
+bind ^C copy main
+bind ^V paste main
+bind ^K cut main
+bind ^F whereis main
+bind M-6 findbracket main
+bind ^D comment main
+
+#always show cursor pos
+set constantshow
